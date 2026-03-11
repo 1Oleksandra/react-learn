@@ -53,7 +53,7 @@ items.forEach(item => observer.observe(item));
 
 // rotateRoadCards();
 let roadCards = document.querySelectorAll('.road-item');
-let stackArea = document.querySelector('.road-items'); // важливо брати весь контейнер
+let stackArea = document.querySelector('.road-items'); 
 
 window.addEventListener('scroll', () => {
   let distanse = window.innerHeight / 2;
