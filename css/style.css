@@ -74,7 +74,6 @@ h1 span {
   position: fixed;       
   bottom: 30px;          
   right: 30px;   
-  font-size: 34px;
   padding: 20px 30px;
   border-radius: 50%;
   background-color: var(--color-blue);
