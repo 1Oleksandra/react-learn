@@ -69,6 +69,29 @@ h1 span {
     width: 100%; 
  
 }
+/* btn-up---------------------------------------------------------*/
+.btn-up {
+  position: fixed;       
+  bottom: 30px;          
+  right: 30px;   
+  font-size: 34px;
+  padding: 20px 30px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 999;          
+}
+
+.btn-up:hover {
+  background-color: #004a99;
+  transform: translateY(-3px);
+}
+
 /* hero --------------------------------------------------------------- */
 .hero {
     width: 100%;
@@ -912,8 +935,8 @@ background: linear-gradient(135deg, var(--color-yellow), #d6b303);
         margin-top: 0;
       }
       .hero-robot::after {
-    height: 55px;
-        width: 156px;
+    height: 58px;
+        width: 168px;
 }
 }
 @media (max-width: 645px) {

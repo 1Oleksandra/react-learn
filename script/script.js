@@ -1,3 +1,26 @@
+const btnUp = document.querySelector(".btn-up");
+const hero = document.querySelector(".hero");
+
+
+const watcher = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      btnUp.style.display = "none"; 
+    } else {
+      btnUp.style.display = "block"; 
+    }
+  });
+});
+
+watcher.observe(hero);
+
+
+btnUp.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 
 
 const items = document.querySelectorAll('.gridBlur');
