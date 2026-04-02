@@ -75,25 +75,25 @@ items.forEach(item => observer.observe(item));
 
 
 // rotateRoadCards();
-let roadCards = document.querySelectorAll('.road-item');
-let stackArea = document.querySelector('.road-items'); 
+// let roadCards = document.querySelectorAll('.road-item');
+// let stackArea = document.querySelector('.road-items'); 
 
-window.addEventListener('scroll', () => {
-  let distanse = window.innerHeight / 2;
-  let topVal = stackArea.getBoundingClientRect().top;
-  let index = Math.floor(-1 * (topVal / distanse));
+// window.addEventListener('scroll', () => {
+//   let distanse = window.innerHeight / 2;
+//   let topVal = stackArea.getBoundingClientRect().top;
+//   let index = Math.floor(-1 * (topVal / distanse));
 
-  roadCards.forEach((card, i) => {
-    if (i < index) {
-      card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-      card.style.opacity = 0;
-    } else {
-      card.style.transform = `rotate(${(i - index) * -5}deg)`;
-      card.style.opacity = 1;
-      card.style.zIndex = roadCards.length - i;
-    }
-  });
-});
+//   roadCards.forEach((card, i) => {
+//     if (i < index) {
+//       card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+//       card.style.opacity = 0;
+//     } else {
+//       card.style.transform = `rotate(${(i - index) * -5}deg)`;
+//       card.style.opacity = 1;
+//       card.style.zIndex = roadCards.length - i;
+//     }
+//   });
+// });
 
 
 
